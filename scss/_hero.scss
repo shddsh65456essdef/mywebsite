@@ -1,0 +1,109 @@
+.hero{
+    background: $backgroundColor;
+    padding: 100px 0;
+    .line-top{
+        color: $primaryColor;
+        text-transform:uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        }
+
+         h2{
+            color: $seconderyColor;
+            font-size: 45px;
+         }
+         h1{
+             color: $seconderyColor;
+             font-size: 55px;
+             font-weight: 500;
+         }
+         p{
+             font-size: 22px;
+             width: 100%;
+             max-width:550px;
+             margin-top: 20px;
+             margin-bottom: 50px;
+         }
+         ul{
+             list-style-type: none;
+             padding: 0;
+             li{
+                 display: inline-block;
+                 a{
+                     &.hire-btn {
+                    color:$lightColor;
+                    background: $primaryColor;
+                    padding: 18px 50px;
+                    border-radius: 40px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 22px;
+                    margin-right: 40px;
+                    border:1px solid $primaryColor;
+                    transition: 0.3s;
+                    &:hover{
+                        background: transparent;
+                         color:$primaryColor;
+                         border:1px solid $primaryColor;
+                    }
+
+                }
+                     &.social-btn{
+                         color:$primaryColor;
+                         border:1px solid $primaryColor;
+                         padding: 26px 30px;
+                         border-radius: 50%;
+                         text-decoration: none;
+                         font-weight: 500;
+                         width: 50px;
+                         height: 50px;
+                         margin:3px;
+                         //display: inline-block;
+                         //text-align: center;
+                         //line-height: 100px;
+                         transition: 0.3s;
+                          &:hover{
+                             background:$primaryColor ;
+                              color:$lightColor;
+                              border:1px solid $primaryColor;
+                         }
+                         i {
+                             font-size: 25px;
+                          }
+                     }
+                 }
+             }
+         } 
+
+         img {
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border:3px solid lighten($seconderyColor, 10%);
+            box-shadow: 0 0 8px $darkColor;
+           
+          
+        }
+    }
+
+    
+@media  screen and (max-width: 992px) {
+    .hero {
+        .hire-btn {
+            padding: 10px 20px !important;
+        }
+
+        .social-btn{
+            padding:10px !important;
+            margin-top: 25px !important;
+            display:inline-block;
+            text-align: center;
+        }
+
+     img{
+        margin-top: 50px;
+    }
+  }
+}

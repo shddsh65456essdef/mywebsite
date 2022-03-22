@@ -1,0 +1,40 @@
+.nav-right-align{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0;
+}
+.navber-custom{
+    font-family: 'Rubik', sans-serif;
+}
+.my-name {
+    font-size: 24px;
+    color:	#550c58 !important;
+    font-weight: 800;
+}
+.nav-link-custom{
+   color:$seconderyColor !important;
+ font-weight: bold;
+ padding-right:0.75rem !important; 
+ padding-left:0!important;
+}
+.nav-link-btn{
+    background: $primaryColor;
+    color:$lightColor !important;
+    padding-right: 1.5rem  !important;
+    padding-left:1.5rem !important;
+    margin-left:0.5rem;
+    border-radius:4px;
+    font-size:14px;
+    &:hover{
+        background: $seconderyColor;
+    }
+}
+@media screen and (max-width: 992px) {
+    .nav-link-custom {
+        padding-left: 0 !important;
+        }
+    .nav-link-btn {
+        margin-left: 0;
+    }
+
+}

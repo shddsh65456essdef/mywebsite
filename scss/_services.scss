@@ -1,0 +1,49 @@
+.services{
+    background-image: url('img/bg2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    margin:30px 0 100px 0;
+    h1{
+        font-size: 54px;
+        color: $seconderyColor;
+        font-weight: 700;
+        padding: 50px 0;
+
+    }
+    .card {
+        i {
+           color: $darkColor; 
+           font-size: 45px;
+           width: 90px;
+           height: 90px;
+           background: lighten( $seconderyColor, 55%);
+           text-align: center;
+           line-height: 90px;
+           border-radius: 50%;
+           margin:80px auto 10px auto;
+
+        }
+        h5{
+            font-size: 28px;
+            color: $seconderyColor;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 55px;
+            padding:0 30px;
+        }
+        
+    }
+}
+@media screen and ( max-width: 992px ){
+    .services{
+        .card{
+            margin-bottom:20px;
+        }
+
+    }
+}
+    

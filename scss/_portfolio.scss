@@ -1,0 +1,37 @@
+.portfolio{
+    background: lighten( $seconderyColor,73%);
+    padding-top: 100px;
+     padding-bottom: 80px;
+    .title-cover{
+        text-align: center;
+        margin-bottom: 50px;
+        h1 {
+            font-size: 54px;
+            color: $seconderyColor;
+            font-weight: 700;
+        }
+        .dash-1{
+            width: 180px;
+            height:3px;
+            background: $seconderyColor;
+            display: block;
+            margin:0 auto 6px auto;
+            position: relative;
+            left: 17px;
+        }
+        .dash-2{
+            width: 160px;
+            height:3px;
+            background: $seconderyColor;
+            display: block;
+            margin:0 auto 6px auto;
+            position: relative;
+            left: 27px;
+        }
+    }
+    img{
+        width:100%;
+        border-radius: 4px;
+        margin-bottom: 22px;
+    }
+}
